@@ -9,64 +9,67 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
 }
 .card {
     background-color: white;
-    width: 400px;
+    max-width: 20rem;
     box-shadow: black 14px 14px 3px;
     border-radius: 1rem;
 }
 .blog {
     display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
     flex-direction: column;
     padding: 1rem 1rem;
-    font-family: 'Figtree', sans-serif;
+    
 }
 .blog img {
-    border-radius: 1.7rem;
+    display: block;
+    max-width: 100%;
+    border-radius: .7rem;
 }
-.blog b:first-child {
+.blog h4 {
     margin-top: 1rem;
     padding: .3rem .5rem;
-    border-radius: 3px;
+    border-radius: .3rem;
     background-color: hsl(47, 88%, 63%);
     font-weight: 800;
+    
 }
-.learning {
-    margin-top: 1.2rem;
-}
-.learning p {
+.published {
     margin-top: 1rem;
     font-weight: 600;
 }
-.foundations h1 {
+.blog h1 {
     margin-top: 1rem;
-    margin-bottom: 1rem;
     font-weight: 800;
-    cursor: pointer;
 }
-.foundations h1:hover {
-    color:hsl(47, 88%, 63%);
+.blog h1 a {
+    text-decoration: none;
+    color: black;
 }
-.foundations p {
+.blog h1 a:hover {
+    color: hsl(47, 88%, 63%);
+}
+.text {
+    margin-top: 1rem;
     color: hsl(0, 0%, 50%);
     font-weight: 600;
 }
-.author {
+.bottom-container {
     display: flex;
     align-items: center;
     margin-top: 1rem;
 }
-.author img {
-    width: 35px;
+.bottom-container img {
+    display: block;
+    max-width: 100%;
 }
-.author b {
+.bottom-container b {
     margin-left: 1rem;
-}
-@media (max-width: 473px) {
-    .card {
-        width: 300px;
-    }
+    font-size: 1.6rem;
 }
